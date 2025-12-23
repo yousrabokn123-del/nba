@@ -1,39 +1,135 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unlock Your Reward</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Rewards Center</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Inter', sans-serif;
-            -webkit-tap-highlight-color: transparent;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            padding: 40px 20px;
+            text-align: center;
         }
-        @keyframes progress {
-            0% { width: 0%; }
-            100% { width: 100%; }
+        .header {
+            font-size: 13px;
+            font-weight: bold;
+            color: #aaaaaa;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
         }
-        .animate-progress {
-            animation: progress 1.5s ease-in-out forwards;
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        .icon-container {
+            margin-bottom: 25px;
+        }
+        .icon {
+            width: 100px;
+            height: 100px;
+            fill: #4CAF50;
+        }
+        h1 {
+            font-size: 30px;
+            margin-bottom: 12px;
+            color: #111111;
+            font-weight: 800;
+        }
+        .subtext {
+            font-size: 16px;
+            color: #777777;
+            margin-bottom: 35px;
+            line-height: 1.4;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 22px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.2);
+            transition: background-color 0.2s, transform 0.1s;
+        }
+        .btn:hover {
+            background-color: #3d8b40;
+        }
+        .btn:active {
+            transform: translateY(1px);
+        }
+        .footer {
+            font-size: 11px;
+            color: #cccccc;
+            margin-top: 50px;
+        }
+        .footer-links {
+            margin-top: 8px;
+        }
+        .footer-links a {
+            color: #cccccc;
+            text-decoration: none;
+            margin: 0 6px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .disclaimer {
+            font-weight: normal;
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 26px;
+            }
+            .btn {
+                font-size: 16px;
+                padding: 18px;
+            }
         }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
-  }
-}
-</script>
 </head>
-<body class="bg-gray-50 text-gray-900">
-    <div id="root"></div>
+<body>
+    <div class="header">Rewards Center</div>
+    
+    <div class="content">
+        <div class="icon-container">
+            <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+            </svg>
+        </div>
+        
+        <h1>Claim Your Reward Now</h1>
+        <p class="subtext">Complete one quick step to unlock your reward.</p>
+        
+        <a href="https://attorneycambridge.com/cl/i/4o2dvj" class="btn">CLAIM NOW</a>
+    </div>
+
+    <div class="footer">
+        <div class="disclaimer">Offer completion required.</div>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+        </div>
+    </div>
 </body>
 </html>
