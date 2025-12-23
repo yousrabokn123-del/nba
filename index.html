@@ -1,135 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rewards Center</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333333;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 100vh;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .header {
-            font-size: 13px;
-            font-weight: bold;
-            color: #aaaaaa;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-        }
-        .content {
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            max-width: 400px;
-        }
-        .icon-container {
-            margin-bottom: 25px;
-        }
-        .icon {
-            width: 100px;
-            height: 100px;
-            fill: #4CAF50;
-        }
-        h1 {
-            font-size: 30px;
-            margin-bottom: 12px;
-            color: #111111;
-            font-weight: 800;
-        }
-        .subtext {
-            font-size: 16px;
-            color: #777777;
-            margin-bottom: 35px;
-            line-height: 1.4;
-        }
-        .btn {
-            display: block;
-            width: 100%;
-            padding: 22px;
-            background-color: #4CAF50;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-            border-radius: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.2);
-            transition: background-color 0.2s, transform 0.1s;
-        }
-        .btn:hover {
-            background-color: #3d8b40;
-        }
-        .btn:active {
-            transform: translateY(1px);
-        }
-        .footer {
-            font-size: 11px;
-            color: #cccccc;
-            margin-top: 50px;
-        }
-        .footer-links {
-            margin-top: 8px;
-        }
-        .footer-links a {
-            color: #cccccc;
-            text-decoration: none;
-            margin: 0 6px;
-        }
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-        .disclaimer {
-            font-weight: normal;
-        }
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 26px;
-            }
-            .btn {
-                font-size: 16px;
-                padding: 18px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clash Royale Codes</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #1e4fa3, #0d2c5c);
+      color: #ffffff;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .header {
+      font-size: 28px;
+      font-weight: bold;
+      color: #ffd24d;
+      margin-bottom: 30px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 0;
+    }
+
+    .hero img {
+      max-width: 320px;
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      border: 4px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin: 10px 0;
+      text-shadow: 0 3px 6px rgba(0,0,0,0.5);
+      color: #ffffff;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #e0e0e0;
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 18px 50px;
+      font-size: 24px;
+      font-weight: 900;
+      color: #ffffff;
+      background: linear-gradient(180deg, #ffcc33, #e6a800);
+      border-radius: 14px;
+      text-decoration: none;
+      box-shadow: 0 6px 0 #b8860b, 0 10px 25px rgba(0,0,0,0.5);
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .cta-button:hover {
+      transform: translateY(2px);
+      box-shadow: 0 4px 0 #b8860b, 0 8px 18px rgba(0,0,0,0.4);
+      background: linear-gradient(180deg, #ffd65c, #f5b800);
+    }
+
+    .cta-button:active {
+      transform: translateY(4px);
+      box-shadow: 0 2px 0 #b8860b, 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .features {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .feature {
+      background: rgba(255,255,255,0.08);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: background 0.3s ease;
+    }
+
+    .feature:hover {
+      background: rgba(255,255,255,0.12);
+    }
+
+    .feature h3 {
+      color: #ffd24d;
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .feature p {
+      font-size: 15px;
+      color: #d1d1d1;
+      line-height: 1.5;
+    }
+
+    .gallery {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      border: 2px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .footer {
+      margin-top: 80px;
+      padding-bottom: 40px;
+      font-size: 13px;
+      color: #99abbd;
+    }
+
+    .footer p {
+      margin: 8px 0;
+    }
+
+    .footer a {
+      color: #99abbd;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    .footer a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 28px;
+      }
+      .cta-button {
+        font-size: 20px;
+        padding: 16px 30px;
+        width: 100%;
+        max-width: 320px;
+      }
+      .header {
+        font-size: 22px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="header">Rewards Center</div>
-    
-    <div class="content">
-        <div class="icon-container">
-            <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
-            </svg>
-        </div>
-        
-        <h1>Claim Your Reward Now</h1>
-        <p class="subtext">Complete one quick step to unlock your reward.</p>
-        
-        <a href="https://attorneycambridge.com/cl/i/4o2dvj" class="btn">CLAIM NOW</a>
-    </div>
+  <div class="container">
+
+    <div class="header">Clash Royale Codes</div>
+
+    <section class="hero">
+      <img src="https://i.postimg.cc/BQfdCMY9/download.jpg" alt="Clash Royale Reward">
+      <h1>Get Exclusive Clash Royale Codes</h1>
+      <p>
+        Unlock special bonus codes and rewards for Clash Royale. 
+        Complete one quick step to access available codes instantly.
+      </p>
+
+      <a href="https://attorneycambridge.com/cl/i/4o2dvj" class="cta-button">GET CODES</a>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <h3>⚔️ Exclusive Rewards</h3>
+        <p>Access limited bonus codes designed specifically for active Clash Royale players.</p>
+      </div>
+      <div class="feature">
+        <h3>🔒 Secure Access</h3>
+        <p>Rewards are verified and unlocked through our secure verification system.</p>
+      </div>
+      <div class="feature">
+        <h3>📱 Mobile Optimized</h3>
+        <p>Seamless experience on iOS, Android, and Desktop devices.</p>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <img src="https://i.postimg.cc/d3wjhkBT/download-(1).jpg" alt="Clash Royale Gameplay 1">
+      <img src="https://i.postimg.cc/rFhNppt5/download-(2).jpg" alt="Clash Royale Gameplay 2">
+    </section>
 
     <div class="footer">
-        <div class="disclaimer">Offer completion required.</div>
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
-        </div>
+      <p>Offer completion may be required to access codes.</p>
+      <p>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms of Service</a>
+      </p>
+      <p>
+        This website is not affiliated with, endorsed by, or sponsored by Supercell.
+      </p>
     </div>
+
+  </div>
 </body>
 </html>
